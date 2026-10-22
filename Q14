@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char str[100], sub[50];
+    char *position;
+
+    cout << "Enter a string: ";
+    cin.getline(str, 100);
+
+    cout << "Enter substring: ";
+    cin.getline(sub, 50);
+
+    position = strstr(str, sub);
+
+    if (position != NULL)
+        cout << "Substring found at position "
+             << position - str + 1;
+    else
+        cout << "Substring not found";
+
+    return 0;
+}
