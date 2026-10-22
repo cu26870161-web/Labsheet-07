@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() {
+    char sentence[200] = "";
+    char str1[50], str2[50], str3[50];
+
+    cout << "Enter first word: ";
+    cin >> str1;
+
+    cout << "Enter second word: ";
+    cin >> str2;
+
+    cout << "Enter third word: ";
+    cin >> str3;
+
+    strcat(sentence, str1);
+    strcat(sentence, " ");
+    strcat(sentence, str2);
+    strcat(sentence, " ");
+    strcat(sentence, str3);
+
+    cout << "Complete sentence = " << sentence;
+
+    return 0;
+}
